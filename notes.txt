@@ -1,0 +1,49 @@
+web designing - front end - html,css,bootstrap,javascript,jquery,photoshop and more software.
+web development - backend - core php,advance php,mysql,ajax,jquery,json.
+
+
+php - query - fetch,insert,delete,modify (CRUD - create read update delete - database connection)
+
+php 
+
+- server side scripting language
+- it is used to create dynamic websites with backend
+- php is non case sensitive
+- we can fetch data through api using ajax 
+- json data format '{"name":"John", "age":30, "car":null}'
+
+
+php wrting ways
+
+<?php ?>
+<? ?>
+
+<?php
+
+echo "<h1><i>helo nishant</i></h1>";
+
+
+
+
+
+?>
+
+
+
+$ and $$ difference
+const in php
+datatypes in php
+concatenation in php
+php if else and multiple if statement
+switch statement
+
+
+
+
+TASK
+---------
+ - Take 3 variables perform addition and store the result in new variable.
+ - Take 2 varible perform subsctraction,multiplication and devision.
+ - Take employee variable and check weather he is in the company or not
+ - do the above program in switch as well
+ - write all the datatypes using vardump
