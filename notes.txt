@@ -50,3 +50,5 @@ TASK
  - Take employee variable and check weather he is in the company or not
  - do the above program in switch as well
  - write all the datatypes using vardump
+ print 1 to 100 numbers in all the loops
+ make 2 form of 4-5 fields and show in get and post method
