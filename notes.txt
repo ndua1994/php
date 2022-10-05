@@ -36,6 +36,9 @@ datatypes in php
 concatenation in php
 php if else and multiple if statement
 switch statement
+loops in php
+erros in php
+methods in php
 
 
 
