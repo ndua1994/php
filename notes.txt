@@ -29,6 +29,11 @@ echo "<h1><i>helo nishant</i></h1>";
 ?>
 
 
+functions :
+predefined
+user-defined
+
+
 
 $ and $$ difference
 const in php
@@ -39,6 +44,7 @@ switch statement
 loops in php
 erros in php
 methods in php
+functions in php
 
 
 
