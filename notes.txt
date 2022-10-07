@@ -45,6 +45,9 @@ loops in php
 erros in php
 methods in php
 functions in php
+foreach loop in php
+functions in php
+array in php
 
 
 
@@ -56,5 +59,11 @@ TASK
  - Take employee variable and check weather he is in the company or not
  - do the above program in switch as well
  - write all the datatypes using vardump
- print 1 to 100 numbers in all the loops
- make 2 form of 4-5 fields and show in get and post method
+ - print 1 to 100 numbers in all the loops
+ - make 2 form of 4-5 fields and show in get and post method
+ - make addtion of 3 numbers using function
+ - print 10 names using foreach loop
+ - make a function and check weather user can vote or not.
+ - make a multi-dimensional array of student with name,age and roll number.
+
+ 
