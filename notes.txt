@@ -48,6 +48,9 @@ functions in php
 foreach loop in php
 functions in php
 array in php
+sorting of array
+super global variable in php
+
 
 
 
