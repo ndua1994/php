@@ -50,6 +50,10 @@ functions in php
 array in php
 sorting of array
 super global variable in php
+include,include_once,require and require_once in php
+datetime in php
+
+
 
 
 
