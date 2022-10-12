@@ -3,11 +3,24 @@
 error_reporting(0);
 if(isset($_POST['add_employee']))
 {
+
+
 	$username=$_POST['username'];
 	$email_id=$_POST['email_id'];
 	$mobile_number=$_POST['mobile_number'];
 	$gender=$_POST['gender'];
 	$designation=$_POST['designation'];
+	$image=$_FILES['image']['name'];
+	$file_extension=pathinfo($_FILES['image']['name'],PATHINFO_EXTENSION);
+
+
+
+	$allowed_image_extension = array(
+	    "png",
+	    "jpg",
+	    "jpeg",
+	    "pdf"
+	);
 
 	if(empty($username))
 	{
@@ -45,8 +58,28 @@ if(isset($_POST['add_employee']))
 		$err[]='Designation is required';
 	}
 
+	if(empty($image))
+	{
+		$err[]='Image is required';
+	}
+
+	if (!in_array($file_extension, $allowed_image_extension) && !empty($image))
+	{
+		$err[]='Image must be in jpg,jpeg and png format';
+	}
+
+	if($_FILES['image']['size']>2097152)
+	{
+		$err[]='File must be less than 2MB';
+
+	}
+
 	if(count($err)==0)
 	{
+
+		move_uploaded_file($_FILES['image']['tmp_name'], "images/$image");
+
+
 		echo 'Form has been submitted successfully !';
 		$username=$email_id=$mobile_number=$gender=$designation='';
 	}
@@ -73,7 +106,7 @@ if(isset($_POST['add_employee']))
     	}
     }
 	?>
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
 	<table width="500" border="1" align="center" cellpadding="2" cellspacing="2">
 		   <tr>
 		   	    <td colspan="2" align="center"><h1>Employee Registration</h1></td>
@@ -106,6 +139,9 @@ if(isset($_POST['add_employee']))
 		   	   	   	       <option value="sales_person" <?=($designation=='sales_person' ? 'selected' : '')?>>Sales Person</option>
 		   	   	   </select>
 		   	   </td>
+		   </tr>
+		   <tr>
+		   	   <td colspan="2"><input type="file" name="image"></td>
 		   </tr>
 		   <tr>
 		   	<td colspan="2" align="center"><input type="submit" name="add_employee" value="Add Employee"></td>
